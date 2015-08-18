@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e8e8e8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/wifi_state"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wifi_state"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:text="@string/wifi_state"
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/wifi_state_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/wifi_state4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/instruction_pre"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction_pre"
+            android:textColor="#666"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/instruction"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction"
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/ipaddress_bg"
+            android:gravity="center"
+            android:minWidth="150dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:singleLine="true"
+            android:textColor="#666"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/start_ftp_server"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_green_selector"
+            android:text="@string/ftp_server_start" />
+    </LinearLayout>
+
+</LinearLayout>

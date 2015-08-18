@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/invite_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/invite_hint_relative_fir"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip">
+
+                    <ImageView
+                        android:id="@+id/image_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/num01" />
+
+                    <TextView
+                        android:id="@+id/invite_friend_share_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toRightOf="@id/image_hint"
+                        android:text="@string/invite_hint_first"
+                        android:textColor="#666666"
+                        android:textSize="12sp"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/invite_hint_relative_sec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip">
+
+                    <ImageView
+                        android:id="@+id/image_hint_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/num02" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dip"
+                        android:layout_toRightOf="@id/image_hint_sec"
+                        android:text="@string/invite_friend_title_illu"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/wifi_invite" />
+
+                    <TextView
+                        android:id="@+id/wifi_hotspot_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="50dip"
+                        android:textColor="#FFF"
+                        android:textSize="15sp"></TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextstep"
+                style="@style/DashboardButton"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/netxtstep_button"></Button>
+
+            <LinearLayout
+                android:id="@+id/invite_qr_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip">
+
+                    <ImageView
+                        android:id="@+id/invite_share_qr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/qrshare_invite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dip"
+                        android:layout_toRightOf="@id/invite_share_qr"
+                        android:text="@string/invite_wifi_qr"
+                        android:textColor="#666"
+                        android:textSize="15sp"></TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#cccccc" />
+
+                <ImageView
+                    android:id="@+id/imag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="20dip"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/invite_client_illu"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invite_message_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/invite_message_hint"
+                    android:textColor="#666666"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/download_apk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:textColor="#666666"
+                    android:textSize="12sp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

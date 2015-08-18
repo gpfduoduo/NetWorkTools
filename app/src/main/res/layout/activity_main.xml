@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.lenovo.networktools.widget.dashboardlayout.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/tools_introduction"
+        style="@style/DashboardButton"
+        android:text="@string/tools_introduction"
+        />
+
+    <Button
+        android:id="@+id/tools_adb_connect"
+        style="@style/DashboardButton"
+        android:text="@string/tools_adb_connect"
+        />
+
+    <Button
+        android:id="@+id/tools_tcp_dump"
+        style="@style/DashboardButton"
+        android:text="@string/tools_tcp_dump"
+        />
+
+    <Button
+        android:id="@+id/tools_ftp_server"
+        style="@style/DashboardButton"
+        android:text="@string/tools_ftp_server"
+        />
+
+    <Button
+        android:id="@+id/tools_share_apk"
+        style="@style/DashboardButton"
+        android:text="@string/tools_share_apk"
+        />
+
+    <Button
+        android:id="@+id/tools_db_inspector"
+        style="@style/DashboardButton"
+        android:text="@string/tools_db_inspector"
+        />
+
+</com.example.lenovo.networktools.widget.dashboardlayout.DashboardLayout>

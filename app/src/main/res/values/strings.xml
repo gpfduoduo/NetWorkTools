@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">网络工具</string>
+    <string name="tools_adb_connect">手机调试</string>
+    <string name="tools_tcp_dump">手机抓包</string>
+    <string name="tcp_dump_start">开始抓包</string>
+    <string name="tcp_dump_stop">停止抓包</string>
+    <string name="tools_ftp_server">FTP服务器</string>
+    <string name="tools_share_apk">分享该应用</string>
+    <string name="tools_db_inspector">数据库查看器</string>
+    <string name="tools_introduction">说明</string>
+
+    <string name="wifi_state">WLAN 状态</string>
+    <string name="instruction">在电脑FTP客户端（如：浏览器）输入以下地址</string>
+    <string name="instruction_pre">启动服务后，可以从电脑远端管理手机内容</string>
+    <string name="ftp_server_start">启动服务</string>
+    <string name="notif_server_starting">远程管理服务已经启动</string>
+    <string name="notif_title">远程管理服务</string>
+
+    <string name="invite_hint_first">请接收的好友打开无线网络</string>
+    <string name="invite_friend_title_illu">请接收的好友连接下面的无线网络</string>
+    <string name="netxtstep_button">连接好了，下一步</string>
+    <string name="invite_wifi_qr">二维码分享</string>
+    <string name="invite_wifi_message">短信分享</string>
+    <string name="invite_message_hint">请好友打开手机浏览器，输入以下网址</string>
+    <string name="invite_client_illu">请好友扫描二维码，安装轻松上网</string>
+
+    <string name="dbinspector_previous">向前</string>
+    <string name="dbinspector_next">向后</string>
+    <string name="dbinspector_content">内容</string>
+    <string name="dbinspector_structure">结构</string>
+    <string name="dbinspector_pref_key_rows_per_page">prefs_key_row_per_page</string>
+    <string name="dbinspector_rows_per_page">Rows per page</string>
+    <string name="dbinspector_rows_per_page_default">10</string>
+</resources>
