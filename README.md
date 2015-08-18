@@ -12,9 +12,7 @@
   将此应用分享给朋友，不需要wifi，自己开启热点，另一个手机连接后在浏览器中下载即可。
 ##数据库查看器
   可以打开所有的db文件，查看里面的内容，方便开发
-  
-  
-  ###具体的如图：
+##具体的如图
   ![image](https://github.com/gpfduoduo/NetWorkTools/blob/master/device-2015-08-18-194940.png "示例图")
   
 
