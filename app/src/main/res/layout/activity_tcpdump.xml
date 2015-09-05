@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tcpdump_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <Button
         android:id="@+id/tcp_dump_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tcp_dump_start"/>
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/tcp_dump_start" />
 
     <Button
         android:id="@+id/tcp_dump_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tcp_dump_stop"/>
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/tcp_dump_stop" />
 </LinearLayout>
