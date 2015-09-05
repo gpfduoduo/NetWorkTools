@@ -65,13 +65,19 @@ public class GeneralCommand
     {
         chmod("data/local");
 
+        File file = new File("data/local/", TCP_DUMP_NAME);
+
+        if (file.exists())
+        {
+            return;
+        }
+
         InputStream is = null;
         OutputStream os = null;
         AssetManager am = context.getAssets();
         try
         {
             is = am.open(TCP_DUMP_NAME);
-            File file = new File("data/local/", TCP_DUMP_NAME);
             os = new FileOutputStream(file);
             FileUtils.copyStream(is, os);
 
@@ -81,12 +87,13 @@ public class GeneralCommand
         catch (IOException e)
         {
             e.printStackTrace();
-            Log.d(tag, "copy tcpdump error");
         }
     }
 
-    public static void startTcpDump(String name)
+    public static void startTcpDump(Context context, String name)
     {
+        GeneralCommand.TcpDump(context);
+
         String[] commands = new String[7];
         commands[0] = "adb shell";
         commands[1] = "su";

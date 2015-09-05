@@ -29,12 +29,7 @@ public class TcpDumpActivity extends BaseActivity
     {
         super.onCreate(savedInstanceState);
 
-        base_text_show.setText("手机必须已经root, 首先执行Adb Connect命令" + "\n" + "PC端cmd运行: "
-            + "/data/local/tcpdump -i any -p -s 0 -w "
-            + Environment.getExternalStorageDirectory() + "/capture.pcap");
-
         setContentView(R.layout.activity_tcpdump);
-
         tcpdump_text = (TextView) findViewById(R.id.tcpdump_text);
     }
 
@@ -45,10 +40,25 @@ public class TcpDumpActivity extends BaseActivity
             case R.id.tcp_dump_start :
                 tcpdump_text.setText("正在抓包...");
                 time = System.currentTimeMillis();
-                GeneralCommand.startTcpDump(savePath + time + ".pcap");
+                new Thread()
+                {
+                    public void run()
+                    {
+                        GeneralCommand.startTcpDump(getApplicationContext(), savePath
+                            + time + ".pcap");
+
+                    }
+                }.start();
                 break;
             case R.id.tcp_dump_stop :
-                GeneralCommand.stopTcpDump();
+                new Thread()
+                {
+                    public void run()
+                    {
+                        GeneralCommand.stopTcpDump();
+                    }
+                }.start();
+
                 tcpdump_text.setText("本次抓包文件保存在：\r\n" + savePath + time + ".pcap");
                 break;
         }

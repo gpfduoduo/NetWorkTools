@@ -37,7 +37,6 @@ public class MainActivity extends Activity {
                     startActivity(new Intent(MainActivity.this, AdbConnectActivity.class));
                     break;
                 case R.id.tools_tcp_dump:
-                    GeneralCommand.TcpDump(MainActivity.this);
                     startActivity(new Intent(MainActivity.this, TcpDumpActivity.class));
                     break;
                 case R.id.tools_ftp_server:
